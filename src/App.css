@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.background {
+  background-color: #13977a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.name {
+  font-size: 72px;
+  color: white;
+}
+
+.onebtn {
+  font-size: 30px;
+  font-family: Georgia;
+}
+.tbtn {
+  font-size: 30px;
+  font-family: Georgia;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+}
+.twobtn {
+  font-size: 30px;
+  font-family: Georgia;
+  left: 40%;
+}
+
+.photo {
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    11% 100%,
+    11% 11%,
+    90% 11%,
+    90% 90%,
+    8% 90%,
+    9% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
