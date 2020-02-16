@@ -15,12 +15,12 @@ import { render } from "react-dom";
 import "./App.css";
 import React, { Component } from "react";
 
-class usersPage extends Component {
+class aboutPage extends Component {
   state = {};
   render() {
     return (
       <div className="background">
-        <h1 className="headerUser">
+        <h1 className="headerAbout">
           <Button
             outline
             color="warning"
@@ -39,19 +39,33 @@ class usersPage extends Component {
             size="lg"
             className="onebtn"
             onClick={() => {
-              window.location.href = "/AboutPage";
+              window.location.href = "/usersPage";
               this.setState({ toggle: { new: false } });
             }}
           >
-            About
+            UsersPage
           </Button>
         </h1>
-        <br></br>
-        <h4 className="name">Available Foods:</h4>
-        <div className="AboutText">Kjalksjdlaksjdlk</div>
+
+        <h4 className="name">About us:</h4>
+
+        <div>
+          <img className="lobster" src={require("./Image/lobster.jpeg")}></img>
+          <div className="AboutText">
+            ON-D-GO is a website that focuses on the issues of food waste in
+            restaurants and food insecurity among individuals. ON-D-GO allows
+            users to locate local restaurants that are willing to sell their
+            cooked dishes for a lower price, rather than throwing them away!
+            <br></br>
+            <br></br>
+            <div>Restaurant Gain: money for left-over meals.</div>
+            <br></br>
+            <div>User Gain: meals at an afforable price.</div>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default usersPage;
+export default aboutPage;

@@ -49,6 +49,50 @@ class homePage extends Component {
           <Modal isOpen={this.state.toggle.start}>
             <ModalHeader>Hello</ModalHeader>
             <ModalBody>
+              <FormGroup>
+                <Label>Restaurant Name</Label>
+                <Input
+                  type="restaurant"
+                  name="restaurant"
+                  placeholder="Enter name..."
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label>Dish:</Label>
+                <Input type="dish" name="dish" placeholder="Enter dish..." />
+              </FormGroup>
+              <FormGroup>
+                <Label>Description</Label>
+                <Input
+                  type="description"
+                  name="description"
+                  placeholder="Anything..."
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label>Original Price</Label>
+                <Input
+                  type="Oprice"
+                  name="Oprice"
+                  placeholder="Enter price..."
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label>New Price</Label>
+                <Input
+                  type="Nprice"
+                  name="Nprice"
+                  placeholder="Enter price..."
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label>Tags</Label>
+                <Input
+                  type="tags"
+                  name="tags"
+                  placeholder="ex: gluten-free, vegan, etc"
+                />
+              </FormGroup>
               <InputGroup>
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>Name:</InputGroupText>
@@ -144,7 +188,16 @@ class homePage extends Component {
       <div className="background">
         <h1 className="header">
           {" "}
-          <Button outline color="warning" size="lg" className="onebtn">
+          <Button
+            outline
+            color="warning"
+            size="lg"
+            className="onebtn"
+            onClick={() => {
+              window.location.href = "/AboutPage";
+              this.setState({ toggle: { new: false } });
+            }}
+          >
             About
           </Button>
         </h1>

@@ -54,3 +54,27 @@
 .header {
   margin-right: -80%;
 }
+
+.headerAbout {
+  margin-top: -15%;
+  margin-right: -73%;
+}
+
+.headerUser {
+  margin-top: -40%;
+  margin-right: -70%;
+}
+
+.AboutText {
+  color: white;
+  padding-left: 35%;
+  padding-right: 15%;
+}
+
+.lobster {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  margin-top: -10%;
+  padding-left: 5%;
+}
