@@ -19,7 +19,7 @@ class usersPage extends Component {
   state = {};
   render() {
     return (
-      <div className="background">
+      <div className="backgroundUsers">
         <h1 className="headerUser">
           <Button
             outline

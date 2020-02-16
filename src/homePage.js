@@ -2,14 +2,10 @@ import {
   Button,
   Modal,
   ModalHeader,
-  Form,
   FormGroup,
   Input,
   Label,
-  ModalBody,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText
+  ModalBody
 } from "reactstrap";
 import { render } from "react-dom";
 import "./App.css";
@@ -23,14 +19,8 @@ class homePage extends Component {
       toggle: {
         start: false,
         new: false
-      },
-      option: "",
-      name: ""
+      }
     };
-
-    // fileSelectedHandler = event => {
-    //   console.log(event.target.files[0]);
-    // };
   }
 
   StartModalButton() {
@@ -58,44 +48,32 @@ class homePage extends Component {
                 <Input
                   type="restaurant"
                   name="restaurant"
-                  placeholder="Enter name..."
+                  placeholder="REMY'S DINER"
                 />
               </FormGroup>
               <FormGroup>
                 <Label>Dish:</Label>
-                <Input type="dish" name="dish" placeholder="Enter dish..." />
+                <Input type="dish" name="dish" placeholder="LASAGNA" />
               </FormGroup>
               <FormGroup>
                 <Label>Description</Label>
                 <Input
                   type="description"
                   name="description"
-                  placeholder="Anything..."
+                  placeholder="Lasagna made fresh from Remy's Diner! Pick up today from 8PM-10PM."
                 />
               </FormGroup>
               <FormGroup>
                 <Label>Original Price</Label>
-                <Input
-                  type="Oprice"
-                  name="Oprice"
-                  placeholder="Enter price..."
-                />
+                <Input type="Oprice" name="Oprice" placeholder="$15.00" />
               </FormGroup>
               <FormGroup>
                 <Label>New Price</Label>
-                <Input
-                  type="Nprice"
-                  name="Nprice"
-                  placeholder="Enter price..."
-                />
+                <Input type="Nprice" name="Nprice" placeholder="$5.00" />
               </FormGroup>
               <FormGroup>
                 <Label>Tags</Label>
-                <Input
-                  type="tags"
-                  name="tags"
-                  placeholder="ex: gluten-free, vegan, etc"
-                />
+                <Input type="tags" name="tags" />
               </FormGroup>
               <FormGroup>
                 <Label>Upload Photo</Label>
@@ -126,10 +104,6 @@ class homePage extends Component {
             </div>
           </Modal>
         </div>
-
-        {/* <Button outline color="warning" size="lg" className="twobtn">
-          Users
-        </Button> */}
       </div>
     );
   }
@@ -178,7 +152,6 @@ class homePage extends Component {
         <div className="name">ON-D-GO</div>
         {this.StartModalButton()}
         {this.ChangeToUsersPage()}
-        {/* <input type="file" onChange={this.fileSelectedHandler} /> */}
       </div>
     );
   }

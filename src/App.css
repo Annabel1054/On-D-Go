@@ -12,6 +12,16 @@
   font-size: calc(10px + 2vmin);
 }
 
+.backgroundUsers {
+  background-color: #d9e9e9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
 .name {
   font-size: 72px;
   color: white;
@@ -26,7 +36,7 @@
 
 .availableFood {
   font-size: 72px;
-  color: white;
+  color: #1f7a7a;
   transform: translate(0%, 5%);
 }
 
@@ -101,5 +111,5 @@
 }
 
 .blue {
-  color: bisque;
+  color: rgb(32, 25, 22);
 }
