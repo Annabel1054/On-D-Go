@@ -3,7 +3,7 @@
 }
 
 .background {
-  background-color: #136b58;
+  background-color: #1f7a7a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,12 +18,24 @@
   transform: translate(0%, -50%);
 }
 
+.about {
+  font-size: 72px;
+  color: white;
+  transform: translate(-10%, 20%);
+}
+
+.availableFood {
+  font-size: 72px;
+  color: white;
+  transform: translate(0%, 5%);
+}
+
 .onebtn {
   font-size: 30px;
   font-family: Georgia;
   top: 55%;
   transform: translate(-90%, 8%);
-  width: 200px;
+  width: 150px;
   height: 60px;
 }
 .twobtn {
@@ -32,7 +44,7 @@
   top: 55%;
   left: 90%;
   transform: translate(80%, -90%);
-  width: 200px;
+  width: 150px;
   height: 60px;
 }
 
@@ -56,19 +68,20 @@
 }
 
 .headerAbout {
-  margin-top: -15%;
+  margin-top: -10%;
   margin-right: -73%;
 }
 
 .headerUser {
-  margin-top: -40%;
+  margin-top: -10%;
   margin-right: -70%;
 }
 
 .AboutText {
   color: white;
-  padding-left: 35%;
-  padding-right: 15%;
+  padding-left: 38%;
+  padding-right: 5%;
+  margin-top: 2%;
 }
 
 .lobster {
@@ -77,4 +90,16 @@
   height: 700px;
   margin-top: -10%;
   padding-left: 5%;
+}
+
+.lphoto {
+  position: absolute;
+}
+
+.uHeader {
+  padding-top: 20%;
+}
+
+.blue {
+  color: bisque;
 }

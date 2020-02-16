@@ -27,6 +27,10 @@ class homePage extends Component {
       option: "",
       name: ""
     };
+
+    // fileSelectedHandler = event => {
+    //   console.log(event.target.files[0]);
+    // };
   }
 
   StartModalButton() {
@@ -93,47 +97,11 @@ class homePage extends Component {
                   placeholder="ex: gluten-free, vegan, etc"
                 />
               </FormGroup>
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Name:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="Restaurant Name" />
-              </InputGroup>
-              <br />
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Dish:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="dish name" />
-              </InputGroup>
-              <br />
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Description:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="anything" />
-              </InputGroup>
-              <br />
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Original Price:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="$_____" />
-              </InputGroup>
-              <br />
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Reduced Price:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="$_____" />
-              </InputGroup>
-              <br />
-              <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                  <InputGroupText>Tags:</InputGroupText>
-                </InputGroupAddon>
-                <Input placeholder="enter as many tags" />
-              </InputGroup>
+              <FormGroup>
+                <Label>Upload Photo</Label>
+                <br></br>
+                <input type="file" onChange={this.fileSelectedHandler} />
+              </FormGroup>
             </ModalBody>
 
             <div class="modal-footer justify-content-between">
@@ -210,6 +178,7 @@ class homePage extends Component {
         <div className="name">ON-D-GO</div>
         {this.StartModalButton()}
         {this.ChangeToUsersPage()}
+        {/* <input type="file" onChange={this.fileSelectedHandler} /> */}
       </div>
     );
   }

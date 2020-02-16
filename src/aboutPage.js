@@ -43,14 +43,17 @@ class aboutPage extends Component {
               this.setState({ toggle: { new: false } });
             }}
           >
-            UsersPage
+            Users
           </Button>
         </h1>
 
-        <h4 className="name">About us:</h4>
+        <h4 className="about">About us</h4>
 
         <div>
-          <img className="lobster" src={require("./Image/lobster.jpeg")}></img>
+          <img
+            className="lobster"
+            src={require("./Image/pizza-woman.jpeg")}
+          ></img>
           <div className="AboutText">
             ON-D-GO is a website that focuses on the issues of food waste in
             restaurants and food insecurity among individuals. ON-D-GO allows
