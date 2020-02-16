@@ -3,7 +3,7 @@
 }
 
 .background {
-  background-color: #13977a;
+  background-color: #136b58;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,25 +15,25 @@
 .name {
   font-size: 72px;
   color: white;
+  transform: translate(0%, -50%);
 }
 
 .onebtn {
   font-size: 30px;
   font-family: Georgia;
-}
-.tbtn {
-  font-size: 30px;
-  font-family: Georgia;
   top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-90%, 8%);
   width: 200px;
   height: 60px;
 }
 .twobtn {
   font-size: 30px;
   font-family: Georgia;
-  left: 40%;
+  top: 55%;
+  left: 90%;
+  transform: translate(80%, -90%);
+  width: 200px;
+  height: 60px;
 }
 
 .photo {
@@ -49,4 +49,8 @@
     100% 100%,
     100% 0%
   );
+}
+
+.header {
+  margin-right: -80%;
 }
